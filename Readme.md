@@ -2,6 +2,8 @@
 
 # Contentstack liquid template example
 
+<img src="https://github.com/contentstack/contentstack-dotnet-liquid-template-example/blob/master/contentstack-liquid-template-example/Image.png" width=970 height= 600>
+
 ## Quickstart
 
 Here’s a quick guide on how to create a Liquid template example using DotNet SDK and Contentstack.
