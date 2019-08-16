@@ -49,9 +49,9 @@ Now add your Contentstack API Key, Delivery Token, and Environment to the appset
 
 ```
 "ContentstackOptions": {
-    "ApiKey": "blt02532e5510d39dec",
-    "AccessToken": "csba4e1dd89e42c2007c004319",
-    "Environment": "development"
+    "ApiKey": <api_key>,
+    "AccessToken": <delivery_token>,
+    "Environment": <environment>
 },
 ```
 This will initiate your project.
