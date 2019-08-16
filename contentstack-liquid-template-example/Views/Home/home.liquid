@@ -1,0 +1,62 @@
+﻿{{ for product in products }}
+<div class="col-md-4 col-sm-6 col-xs-12 women-dresses">
+    <div class="women-grids wp1 animated wow slideInUp product-item" data-wow-delay=".5s">
+        <a href={{ product.url }}>
+            <div class="product-img">
+                {{ if product.featured_image}}
+                <img src="{{ product.featured_image[0].url }}" alt="" />
+                {{ end }}
+                <div class="p-mask">
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart" />
+                        <input type="hidden" name="add" value="1" />
+                        <input type="hidden" name="w3ls1_item" value="Shoes" />
+                        <input type="hidden" name="amount" value="50.00" />
+                        {{ if product.inStock }}
+                        {{ if product.offer_price > product.price }}
+                        <button type="submit"
+                                data-item-id="{{ product.uid }}"
+                                data-item-name="{{ product.title }}"
+                                data-item-price="{{ product.price }}"
+                                data-item-weight="20"
+                                data-item-url="{{ product.url }}">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart
+                        </button>
+                        {{ else }}
+                        <button type="submit"
+                                data-item-id="{{ product.uid }}"
+                                data-item-name="{{ product.title }}"
+                                data-item-price="{{ product.offer_price }}"
+                                data-item-weight="20"
+                                data-item-url="{{ product.irl }}">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart
+                        </button>
+                        {{ end }}
+                        {{ else }}
+                        <button type="submit" class="btn btn-warning w3ls-cart pw3ls-cart" disabled="disabled"
+                                data-item-id="{{ product.uid }}"
+                                data-item-name="{{ product.title }}"
+                                data-item-price="{{ product.offer_price }}"
+                                data-item-weight="20"
+                                data-item-url="{{ product.url }}">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i> Out of Stock
+                        </button>
+                        {{ end }}
+                    </form>
+                </div>
+            </div>
+        </a>
+        <h4>{{ product.title }}</h4>
+        {{ if product.offer_price }}
+        {{ if product.offer_price > product.price }}
+        <h5>${{ product.price }}</h5>
+        {{ else }}
+        <h5>${{ product.offer_price }}</h5>
+        {{ end }}
+        {{ else }}
+        <h5>${{ product.price }}</h5>
+        {{ end }}
+    </div>
+</div>
+    {{ end }}
+
