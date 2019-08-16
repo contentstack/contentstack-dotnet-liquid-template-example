@@ -53,7 +53,7 @@ Now add your Contentstack API Key, Delivery Token, and Environment to the appset
     "ApiKey": <api_key>,
     "AccessToken": <delivery_token>,
     "Environment": <environment>
-},
+}
 ```
 This will initiate your project.
 
