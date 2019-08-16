@@ -11,8 +11,9 @@ Here’s a quick guide on how to create a Liquid template example using DotNet S
 - Visual Studio
 -  [Conentstack](https://app.contentstack.com)  account
 
-*Note: For this tutorial, we have assumed that you are familiar with Contentstack. If not, then please refer to the docs (Contentstack docs) for more details.
-
+```
+Note: For this tutorial, we have assumed that you are familiar with Contentstack. If not, then please refer to the docs ([Contentstack docs](https://www.contentstack.com/docs)) for more details.
+```
 In this tutorial, we will first go through the steps involved in configuring Contentstack, and then look at the steps required to customize and use the presentation layer.
 
 ### Step 1: Create a stack
