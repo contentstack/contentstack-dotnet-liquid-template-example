@@ -46,7 +46,7 @@ To get your app up and running quickly, we have created a sample iOS app for thi
 ```
 $ git clone https://github.com/contentstack/contentstack-dotnet-liquid-template-example.git
 ```
-Now add your Contentstack API Key, Delivery Token, and Environment to the appsettins.json file within your project. (Find your Stack's API Key and Delivery Token).
+Now add your Contentstack API Key, Delivery Token, and Environment to the appsettins.json file within your project. (Find your [Stack's API Key and Delivery Token](https://www.contentstack.com/docs/apis/content-delivery-api/#authentication)).
 
 ```
 "ContentstackOptions": {
