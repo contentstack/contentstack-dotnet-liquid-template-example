@@ -26,7 +26,7 @@ To add an environment in Contentstack, navigate to ‘Settings' -> 'Environment'
 A content type is like the structure or blueprint of a page or a section of your web or mobile property. Read more about [Content Types](https://www.contentstack.com/docs/guide/content-types).
 For this website, basic content type is required: Product. For quick integration, we have already created these content type. You simply need to import them to your stack. (You can also create your own content types. Learn [how to do this](https://www.contentstack.com/docs/guide/content-types#creating-a-content-type)).
 
-[Download All Content Types](https://github.com/contentstack/contentstack-dotnet-liquid-template-example/tree/master/Schema/schema.zip)
+[Download All Content Types](https://github.com/contentstack/contentstack-dotnet-liquid-template-example/tree/master/contentstack-liquid-template-example/Schema/schema.zip)
 
 To import the content types, first save the zipped folder of the JSON files given below on your local machine. Extract the files from the folder. Then, go to your stack in Contentstack. The next screen prompts you to either create a new content type or import one into your stack. Click the ‘Import’ link, and select the JSON file saved on your machine.
 
@@ -57,5 +57,5 @@ Now add your Contentstack API Key, Delivery Token, and Environment to the appset
 This will initiate your project.
 
 ### Step 6: Build and run your Conference app
-Open the .csproj file to see the project in VS and install Dependencies.
+Open the .sln file to see the project in VS and install Dependencies.
 Now that we have a working project, you can build and run it.
