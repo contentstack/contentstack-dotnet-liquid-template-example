@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>contentstack_liquid_template_example</RootNamespace>
   </PropertyGroup>
@@ -13,12 +13,20 @@
       <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="contentstack.csharp" Version="2.1.0" />
-    <PackageReference Include="contentstack.aspnetcore" Version="1.0.0" />
     <PackageReference Include="Scriban" Version="2.1.0" />
+    <PackageReference Include="contentstack.csharp" Version="2.4.0" />
+    <PackageReference Include="contentstack.aspnetcore" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Contentstack.AspNetCore">
+      <HintPath>..\..\docfx_project\src\contentstack-dotnet\Contentstack.AspNetCore\bin\Debug\netstandard1.4\Contentstack.AspNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Contentstack.Core">
+      <HintPath>..\..\docfx_project\src\contentstack-dotnet\Contentstack.Core\bin\Debug\netstandard1.4\Contentstack.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
