@@ -33,7 +33,7 @@ namespace contentstack_liquid_template_example
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(option => option.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddContentstack(Configuration);
         }
 
