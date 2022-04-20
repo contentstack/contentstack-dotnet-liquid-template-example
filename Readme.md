@@ -10,4 +10,4 @@ About this project: Create professional liquid template website using .Net frame
 # Tutorial
 We have created an in-depth tutorial on how you can create a example using .Net framework. By following the steps given in the tutorial, design a website similar to the one given in the demo.
 
-[Create a liquid template example using Contentstack .Net framework](https://www.contentstack.com/docs/example-apps/build-a-liquid-template-example-using-contentstack-dot-net-sdk).
+[Create a liquid template example using Contentstack .Net framework](https://www.contentstack.com/docs/developers/sample-apps/build-a-liquid-template-example-using-contentstack-dot-net-sdk/).
