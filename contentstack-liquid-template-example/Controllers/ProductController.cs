@@ -28,7 +28,7 @@ namespace contentstack_liquid_template_example.Controllers
         public async Task<IActionResult> Index(string id)
         {
             string result = string.Empty;
-            var entry = _stack.ContentType("product").Entry(id).IncludeReference("related_products");
+            var entry = _stack.ContentType("product").Entry(id);
             ProductModel product = await entry.Fetch<ProductModel>();
             var fileString = System.IO.File.ReadAllText(Path.GetFullPath("Views/Product/product.liquid"));
             var template = Template.Parse(fileString);

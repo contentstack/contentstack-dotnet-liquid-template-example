@@ -20,7 +20,7 @@ namespace contentstack_liquid_template_example.Controllers
         public async Task<IActionResult> Index()
         {
             string result = string.Empty;
-            var query = _stack.ContentType("product").Query().IncludeReference("related_products");
+            var query = _stack.ContentType("product").Query();
             ContentstackCollection<ProductModel> products = await query.Find<ProductModel>();
             var fileString = System.IO.File.ReadAllText(Path.GetFullPath("Views/Home/home.liquid"));
             var template = Template.Parse(fileString);
