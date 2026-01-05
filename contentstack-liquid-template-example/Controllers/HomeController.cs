@@ -17,6 +17,7 @@ namespace contentstack_liquid_template_example.Controllers
         private readonly ContentstackClient _stack;
         public HomeController(ContentstackClient stack) => _stack = stack;
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             string result = string.Empty;
@@ -28,11 +29,13 @@ namespace contentstack_liquid_template_example.Controllers
             return View("Index", result);
         }
 
+        [HttpGet]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [HttpGet]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
