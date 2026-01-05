@@ -19,6 +19,7 @@ namespace contentstack_liquid_template_example.Controllers
         public ProductController(ContentstackClient stack) => _stack = stack;
 
         // GET: /<controller>/
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
